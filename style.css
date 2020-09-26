@@ -209,9 +209,7 @@ button:focus {
 }
 
 .zombie{
-    background-image: url('walki.png');
-    background-repeat: no-repeat;
-    background-position: center;
+    
     z-index:-1;
     position: absolute;
     margin-top: 50%;
