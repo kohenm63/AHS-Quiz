@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Quiz App</title>
+        <link rel="stylesheet" href="style.css" />
+      
+        
+    </head>
+    <body>
+       <!-- make alert invisible when loading the html page, 
+        make it visible onclick only: style = "display:none"...-->
+        <div class="alert" style = "display:none">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <strong style="font-size: xxx-large;"> I suggest You write this one down for later reviewing...</strong> 
+          </div>
+        
+        <div class="cursor"></div>
+        <progress value="0" max="20" id=p1></progress>
+
+        <p id="demo"> </p>
+        <div class="quiz-container" class="glow" id="quiz">
+            <div class="quiz-header">
+                <h2 id="question">Question</h2>
+                <ul>
+                    <li>
+                        <input
+                            type="radio"
+                            id="a"
+                            name="answer"
+                            class="answer"
+                        />
+                        <label id="a_text" for="a">Question</label>
+                    </li>
+                    <li>
+                        <input
+                            type="radio"
+                            id="b"
+                            name="answer"
+                            class="answer"
+                        />
+                        <label id="b_text" for="b">Question</label>
+                    </li>
+                    <li>
+                        <input
+                            type="radio"
+                            id="c"
+                            name="answer"
+                            class="answer"
+                        />
+                        <label id="c_text" for="c">Question</label>
+                    </li>
+                    <li>
+                        <input
+                            type="radio"
+                            id="d"
+                            name="answer"
+                            class="answer"
+                        />
+                        <label id="d_text" for="d">Question</label>
+                    </li>
+                </ul>
+            </div>
+            <button id="submit">Submit</button>
+        </div>
+      <div class="zombie">
+          <img src="/walki.png" width="60" height="100" alt="zombi">
+
+      </div>
+      <div class="gif">
+        <IMG src="gif.gif" width="160" height="100">
+      </div>
+      
+
+        <embed src="walkthrough.wav" id ="myAudio" loop="loop" autostart="true" width="1"
+         height="0">
+         <embed src="bgSound.mp4" loop="false" autostart="true" width="1"
+         height="0">
+        <script src="script.js" defer></script>
+    </body>
+</html>

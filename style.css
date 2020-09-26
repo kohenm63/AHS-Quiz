@@ -1,0 +1,301 @@
+@font-face {
+font-family: 'AmericanHorrorStory-8VwZ.otf';
+src: url(fonts/AmericanHorrorStoryPromo-YxWy\ copy.otf);
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    
+    background-image: url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'AmericanHorrorStory-8VwZ.otf';
+    background-color: #020202;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+    cursor: none;
+   
+}
+/* custom radio btns style*/
+
+input[type='radio']:after {
+    width: 13px;
+    height: 13px;
+    border-radius: 13px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #ffffff;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+    border: 1px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 13px;
+    height: 13px;
+    border-radius: 13px;
+    top: -3px;
+    left: -1px;
+    position: relative;
+    background-color: rgba(177, 8, 8, 0.8);
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+    border: 1px solid white;
+}
+
+
+.cursor{
+    background-image: url(/bgHand.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.8;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 0 10px 2px rgba(255, 7, 7, 0.8);
+    transform: translate() ;
+    -webkit-transform: translate(-50%,-50%) ;
+    pointer-events: none;
+    -moz-transform: translate() ;
+    -ms-transform: translate() ;
+    -o-transform: translate() ;
+    z-index: 1;
+   
+}
+
+
+
+.quiz-container {
+    background-color: rgb(0, 0, 0 , 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+   
+    width: 600px;
+    max-width: 100%;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 2px rgb(255, 255, 255), 0 0 25px
+     rgb(255, 255, 255), 0 0 5px rgb(18, 255, 30);
+  
+    
+}
+
+
+
+.quiz-header {
+    padding: 4rem;
+}
+
+h2 {
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    padding: 5px;
+}
+
+
+
+button {
+    background-color: rgb(0, 0, 0 , 0.1);
+    opacity: 0.7;
+    border: none;
+    color: rgb(3, 3, 3,);
+    text-shadow: 3px 2px 2px rgb(255, 255, 255), 0 0 25px
+    rgb(255, 255, 255), 0 0 5px rgb(18, 255, 30);
+    display: block;
+    font-family: inherit;
+    font-size: 2rem;
+    width: 100%;
+    padding: 1rem;
+}
+
+button:hover {
+
+    background-color: rgb(0, 0, 0, 0.1);
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 2px 2px rgb(255, 6, 6), 0 0 25px
+    rgb(113, 8, 8), 0 0 5px rgb(255, 255, 255);
+   
+  
+}
+
+button:focus {
+    background-color: rgb(0, 0, 0,0.1);
+    outline: none;
+  
+  
+}
+
+#demo {
+    position: absolute;
+    top:0;
+    right:0;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    margin-top: 30px;
+    margin-right: 10px;
+    background-image: url('clockBg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.4;
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    text-shadow: 3px 2px 2px rgb(255, 255, 255), 0 0 25px    rgb(3, 124, 116), 0 0 5px rgb(255, 255, 255);
+    transition: opacity 60s ease-in;
+    -webkit-transition: opacity 60s ease-in;
+    -moz-transition: opacity 60s ease-in;
+    -ms-transition: opacity 60s ease-in;
+    -o-transition: opacity 60s ease-in;
+}
+
+#myProgress {
+    width: 100%;
+    background-color: grey;
+  }
+  
+  #myBar {
+    width: 2%;
+    height: 30px;
+    background-color: green;
+  }
+
+  progress {
+    position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 10px;
+  margin-top: 30px;
+  background-color: brown;
+  box-shadow: 0 0 10px 2px rgba(7, 255, 48, 0.8);
+
+   
+}
+
+.zombie{
+    z-index:-1;
+    position: absolute;
+    margin-top: 50%;
+    left: 50%;
+    margin-left: 5%;
+    animation: smooth 120s ease-in;
+    -moz-animation: smooth 120s ease-in;
+    -webkit-animation: smooth 120s ease-in;
+    -o-animation: smooth 120s ease-in;
+    -ms-animation: smooth 120s ease-in;
+}
+
+@-webkit-keyframes smooth {
+0% { opacity: 0;}
+100% { opacity: 0.6;}
+}
+
+@-moz-keyframes smooth {
+0% { opacity: 0;}
+100% { opacity: 1;}
+}
+
+@-o-keyframes smooth {
+0% { opacity: 0;}
+100% { opacity: 1;}
+}
+
+@keyframes smooth {
+0% { opacity: 0;}
+100% { opacity: 1;}
+}
+
+.gif{
+    position: absolute;
+opacity: 0.8;
+   margin-top: 60%;
+    left: 60%;
+    margin-left: 15%;
+    z-index:-1;
+}
+
+/*alert*/
+
+.alert {
+    opacity: 0.8;
+    position: absolute;
+    overflow: hidden;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+    height: 90%;
+    width: 60%;
+    padding: 20px;
+    background-image: url('donkey.gif');
+    background-size: 500px 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: brown;
+    color: white;
+    opacity: 1;
+    border-radius: 20px;
+  box-shadow: 5px 5px 20px rgba(rgb(255, 255, 255), 80%);
+ z-index: 1;
+  overflow-x: hidden;
+  transition: 0.5s;
+  text-align: center;
+  
+  
+  }
+  
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 40px;
+    line-height: 20px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+  
+  .closebtn:hover {
+    color: rgb(255, 255, 255);
+  }
+
+  
