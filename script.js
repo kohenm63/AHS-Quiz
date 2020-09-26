@@ -259,7 +259,7 @@ submitBtn.addEventListener("click", () => {
             setTimeout (function(){
                 var audio = new Audio("lol.wav");
                 audio.play();
-            }, 5000)
+            }, 1000)
             
             
             audio.play();
@@ -267,7 +267,7 @@ submitBtn.addEventListener("click", () => {
             setTimeout (function(){
                 var audio = new Audio("AHOtro.mp4");
                 audio.play();
-            }, 8000)
+            }, 2000)
             
           
         }
@@ -306,7 +306,7 @@ function cursor (e) {
 //audio delay
 setTimeout(function(){
     document.getElementById("myAudio").play();
-  }, 8000)
+  }, 2000)
 
 
   //custom alert  
