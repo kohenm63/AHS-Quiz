@@ -306,7 +306,7 @@ function cursor (e) {
 //audio delay
 setTimeout(function(){
     document.getElementById("myAudio").play();
-  }, 2000)
+  }, 1000)
 
 
   //custom alert  
