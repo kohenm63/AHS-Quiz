@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'AmericanHorrorStory-8VwZ.otf';
+  src: url(fonts/AmericanHorrorStoryPromo-YxWy\ copy.otf);
+  
+  }
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+  }
+  body{
+    background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+.loader {
+  font-family: 'AmericanHorrorStory-8VwZ.otf';
+  font-size: 60px;
+  color: brown;
+  }
+
+  .loader::after{
+    content: '\2026';
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: bottom;
+    animation: dots steps(4, end) 2s infinite;
+    -webkit-animation: dots steps(4, end) 2s infinite;
+    width: 0;
+}
+
+@keyframes dots{
+  to {
+    width: 4.5rem;
+  }
+}
+
+
+
+
+
+
+
