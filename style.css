@@ -7,6 +7,11 @@ src: url(AmericanHorrorStoryPromo-YxWy\ copy.otf);
 * {
     box-sizing: border-box;
 }
+.main{
+    opacity: 0;
+    display: none;
+    transition: opacity 2s ease-in;
+}
 
 
 body {
