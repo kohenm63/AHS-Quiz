@@ -8,7 +8,7 @@ function init() {
 
         main.style.display = 'flex';
         setTimeout(() =>main.style.opacity = 1, 50);
-        },4000);
+        },2000);
 }
 
 init();
@@ -224,6 +224,8 @@ const b_text = document.getElementById("b_text");
 const c_text = document.getElementById("c_text");
 const d_text = document.getElementById("d_text");
 const submitBtn = document.getElementById("submit");
+const hintBtn = document.getElementById("hint");
+const hintEl = document.getElementById("hint-text");
 
 let currentQuiz = 0;
 let score = 0;
@@ -234,14 +236,13 @@ loadQuiz();
 
 function loadQuiz() {
     deselectAnswers();
-
     const currentQuizData = quizData[currentQuiz];
-
     questionEl.innerText = currentQuizData.question;
     a_text.innerText = currentQuizData.a;
     b_text.innerText = currentQuizData.b;
     c_text.innerText = currentQuizData.c;
     d_text.innerText = currentQuizData.d;
+
 }
 
 function getSelected() {
@@ -273,23 +274,20 @@ submitBtn.addEventListener("click", () => {
 
     if (answer) {
         if (answer === quizData[currentQuiz].correct) {
+       
             score++;
             increment();
 
             var audio = new Audio("clap.mp3");
             audio.play();
-          
-
-           
-        
+                  
         }
         if (answer !== quizData[currentQuiz].correct) {
             score--;
             increment();
             var audio = new Audio("wrong.wav");
             audio.play();
-           alert();
-            
+           alert(); 
         
         }
 
@@ -366,3 +364,14 @@ function alert() {
       x.style.display = "none";
     } 
   }
+
+  hintBtn.addEventListener("click", () => {
+  hintEl.innerText = quizData[currentQuiz].explanation;
+
+  setTimeout(() => {
+    hintEl.innerText = "";
+  }, 5000);
+});
+
+
+

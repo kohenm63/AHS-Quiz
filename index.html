@@ -22,12 +22,16 @@
             <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
             <strong style="font-size: xxx-large;"> I suggest You write this one down for later reviewing...</strong> 
           </div>
+
+          
         
         <div class="cursor"></div>
         <progress value="0" max="20" id=p1></progress>
 
         <p id="demo"> </p>
         <div class="quiz-container" class="glow" id="quiz">
+            <button id="hint" onclick="showHint()">Hint</button>
+
             <div class="quiz-header">
                 <h2 id="question">Question</h2>
                 <ul>
@@ -70,6 +74,9 @@
                 </ul>
             </div>
             <button id="submit">Submit</button>
+            <div id="hint-text"></div>
+
+
         </div>
 <!--       <div class="zombie">
           <img src="walki.png" width="60" height="100" alt="zombi">
