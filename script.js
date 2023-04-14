@@ -77,15 +77,8 @@ const quizData = [
     correct: "a",
     explanation: "Django's built-in admin interface provides a web-based interface for managing database tables and records, making it easy to create, update, and delete data without writing custom views."
   },
-  {
-    question: "What is Django's object-oriented approach to database models called?",
-    a: "Object-Relational Mapping (ORM)",
-    b: "Django Models",
-    c: "Pythonic Models",
-    d: "Data Objects",
-    correct: "b",
-    explanation: "Django's object-oriented approach},
-      {
+  
+     {
     question: "What is the name of the Django testing framework?",
     a: "Unittest",
     b: "Pytest",

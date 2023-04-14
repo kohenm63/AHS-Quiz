@@ -1,8 +1,3 @@
-@font-face {
-font-family: 'AmericanHorrorStory-8VwZ.otf';
-src: url(AmericanHorrorStoryPromo-YxWy\ copy.otf);
-
-}
 
 * {
     box-sizing: border-box;
@@ -16,13 +11,14 @@ src: url(AmericanHorrorStoryPromo-YxWy\ copy.otf);
 
 body {
     
-    background-image: url(mr44_hunted_house_inside_young_people_searching_for_clues_for_m_1f82482b-3646-4ccc-8dd4-a33845c9c4ad.png);
+    background-image: url(mr44_hunted_house_inside_young_people_searching_for_clues_for_m_1f82482b-3646-4ccc-8dd4-a33845c9c4ad.png); 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: 'AmericanHorrorStory-8VwZ.otf';
-    background-color: #020202;
-  
+    /* font-family: 'AmericanHorrorStory-8VwZ.otf'; */
+    font-family: 'Schibsted Grotesk', sans-serif;
+    background-color: #000000;
+    font-size: 2rem;
     align-items: center;
     justify-content: center;
     margin: 0;
@@ -30,7 +26,7 @@ body {
     cursor: none;
    
 }
-/* custom radio btns style*/
+/* custom radio btns style */
 
 input[type='radio']:after {
     width: 13px;
@@ -39,7 +35,7 @@ input[type='radio']:after {
     top: -2px;
     left: -1px;
     position: relative;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     content: '';
     display: inline-block;
     visibility: visible;
@@ -71,19 +67,19 @@ input[type='radio']:checked:after {
 
 
 .cursor{
-    background-image: url(bgHand.png);
+    /* background-image: url(bgHand.png); */
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0.8;
-    width: 5rem;
-    height: 5rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     position: absolute;
-    box-shadow: 0 0 10px 2px rgba(255, 7, 7, 0.8);
+    box-shadow: 0 0 10px 2px rgba(255, 226, 7, 0.8);
     transform: translate() ;
     -webkit-transform: translate(-50%,-50%) ;
     pointer-events: none;
@@ -97,18 +93,22 @@ input[type='radio']:checked:after {
 
 
 .quiz-container {
+    margin-top: 4rem;
+    margin-left: 1rem;
     background-color: rgb(0, 0, 0 , 0.1);
     border-radius: 10px;
-    box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+    /* box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1); */
    
-    width: 600px;
+    width: 500px;
     max-width: 100%;
-    color: rgb(0, 0, 0);
-    text-shadow: 2px 2px 2px rgb(255, 255, 255), 0 0 25px
-     rgb(255, 255, 255), 0 0 5px rgb(18, 255, 30);
-  
-    
+    color: rgb(255, 255, 255);
+    /* text-shadow: 2px 2px 2px rgb(255, 255, 255), 0 0 25px
+     rgb(255, 255, 255), 0 0 5px rgb(255, 216, 18); */
+     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1),
+     -4px -4px 8px rgba(255, 255, 255, 0.5);
 }
+    
+
 
 
 
@@ -137,24 +137,27 @@ ul li {
 
 button {
     background-color: rgb(0, 0, 0 , 0.1);
-    opacity: 0.7;
-    border: none;
-    color: rgb(3, 3, 3,);
-    text-shadow: 3px 2px 2px rgb(255, 255, 255), 0 0 25px
-    rgb(255, 255, 255), 0 0 5px rgb(18, 255, 30);
+    opacity: 0.8;
+    border: 5px;
+    color: rgb(255, 255, 255);
+    /* text-shadow: 3px 2px 2px rgb(255, 255, 255), 0 0 25px
+    rgb(255, 255, 255), 0 0 5px rgb(255, 164, 18); */
     display: block;
     font-family: inherit;
     font-size: 2rem;
     width: 100%;
     padding: 1rem;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1),
+                -4px -4px 8px rgba(255, 255, 255, 0.5);
+
 }
 
 button:hover {
 
     background-color: rgb(0, 0, 0, 0.1);
     color: rgb(255, 255, 255);
-    text-shadow: 3px 2px 2px rgb(255, 6, 6), 0 0 25px
-    rgb(113, 8, 8), 0 0 5px rgb(255, 255, 255);
+    /* text-shadow: 3px 2px 2px rgb(255, 6, 6), 0 0 25px
+    rgb(113, 8, 8), 0 0 5px rgb(255, 255, 255); */
    
   
 }
@@ -206,9 +209,9 @@ button:focus {
   top: 0;
   left: 0;
   margin-left: 10px;
-  margin-top: 30px;
+  margin-top: 10px;
   background-color: brown;
-  box-shadow: 0 0 10px 2px rgba(7, 255, 48, 0.8);
+  box-shadow: 0 0 10px 2px rgba(255, 185, 7, 0.8);
 
    
 }
