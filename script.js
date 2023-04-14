@@ -14,173 +14,213 @@ function init() {
 init();
 
 const quizData = [
+   {
+    question: "What is Django?",
+    a: "A programming language",
+    b: "A web framework",
+    c: "A database management system",
+    d: "A content management system",
+    correct: "b",
+    explanation: "Django is a high-level Python web framework that enables rapid development of secure and maintainable websites."
+  },
+  {
+    question: "What is the purpose of Django's 'views' in the Model-View-Controller (MVC) pattern?",
+    a: "To define database models",
+    b: "To render templates",
+    c: "To handle user input and generate output",
+    d: "To manage the application's data layer",
+    correct: "c",
+    explanation: "Views are the central component of Django's MVC pattern, responsible for handling user input, processing data, and rendering output."
+  },
+  {
+    question: "What is Django's built-in object-relational mapping (ORM) system?",
+    a: "A database query optimization tool",
+    b: "A database migration tool",
+    c: "A system for defining data models and interacting with the database",
+    d: "A system for managing database transactions",
+    correct: "c",
+    explanation: "Django's ORM is a powerful tool for defining data models in Python code and interacting with the database without writing SQL."
+  },
+  {
+    question: "What is Django's URL routing system used for?",
+    a: "To map URLs to views",
+    b: "To map views to models",
+    c: "To map models to database tables",
+    d: "To map templates to views",
+    correct: "a",
+    explanation: "Django's URL routing system maps URLs to the appropriate views, allowing the application to process user input and generate output based on the requested URL."
+  },
+  {
+    question: "What is the name of the file that contains Django's project-level settings?",
+    a: "settings.py",
+    b: "urls.py",
+    c: "models.py",
+    d: "views.py",
+    correct: "a",
+    explanation: "The settings.py file contains project-level settings such as database configuration, security settings, and installed applications."
+  },
+  {
+    question: "What is the name of the Django template language?",
+    a: "Jinja2",
+    b: "Django Templates",
+    c: "Mako",
+    d: "Handlebars",
+    correct: "b",
+    explanation: "Django Templates is the default template language used by Django, allowing developers to write HTML templates that can be rendered with dynamic content."
+  },
+  {
+    question: "What is the purpose of Django's built-in admin interface?",
+    a: "To allow developers to manage database tables and records",
+    b: "To allow users to log in to the application",
+    c: "To enable automatic deployment of the application",
+    d: "To provide a testing environment for the application",
+    correct: "a",
+    explanation: "Django's built-in admin interface provides a web-based interface for managing database tables and records, making it easy to create, update, and delete data without writing custom views."
+  },
+  {
+    question: "What is Django's object-oriented approach to database models called?",
+    a: "Object-Relational Mapping (ORM)",
+    b: "Django Models",
+    c: "Pythonic Models",
+    d: "Data Objects",
+    correct: "b",
+    explanation: "Django's object-oriented approach},
+      {
+    question: "What is the name of the Django testing framework?",
+    a: "Unittest",
+    b: "Pytest",
+    c: "Django Test",
+    d: "Testing Framework",
+    correct: "a",
+    explanation: "Django includes a testing framework based on the unittest module from Python's standard library, providing a convenient way to test Django views, models, and other components."
+  },
+  {
+    question: "What is Django's built-in caching system used for?",
+    a: "To improve the performance of database queries",
+    b: "To store user session data",
+    c: "To store frequently accessed data in memory",
+    d: "To cache HTTP responses",
+    correct: "c",
+    explanation: "Django's caching framework allows developers to store frequently accessed data in memory, reducing the need to query the database or perform expensive computations."
+  },
+  {
+    question: "What is the name of the Python package that includes Django's built-in authentication system?",
+    a: "django-auth",
+    b: "django-authentication",
+    c: "django.contrib.auth",
+    d: "django.security.auth",
+    correct: "c",
+    explanation: "Django's authentication system is included in the django.contrib.auth package, providing a secure and flexible way to handle user authentication and authorization."
+  },
+  {
+    question: "What is the purpose of Django's middleware?",
+    a: "To handle HTTP requests and responses",
+    b: "To store user session data",
+    c: "To cache frequently accessed data",
+    d: "To manage database transactions",
+    correct: "a",
+    explanation: "Django's middleware is a framework for processing HTTP requests and responses, allowing developers to add functionality such as authentication, caching, and logging to their applications."
+  },
+  {
+    question: "What is the name of the Django package that provides support for sending email?",
+    a: "django-email",
+    b: "django-mail",
+    c: "django.contrib.email",
+    d: "django.core.mail",
+    correct: "d",
+    explanation: "Django's email functionality is included in the django.core.mail package, providing a simple and powerful way to send email from Django applications."
+  },
+  {
+    question: "What is the name of Django's template inheritance feature?",
+    a: "Template Inheritance",
+    b: "Template Blocks",
+    c: "Template Composition",
+    d: "Template Overriding",
+    correct: "a",
+    explanation: "Django's template inheritance allows developers to create reusable templates by defining a base template that can be extended and customized by child templates."
+  },
+  {
+    question: "What is the purpose of Django's 'signals' framework?",
+    a: "To allow communication between different parts of the application",
+    b: "To manage database transactions",
+    c: "To handle HTTP requests and responses",
+    d: "To provide a testing environment for the application",
+    correct: "a",
+    explanation: "Django's signals framework provides a way for different parts of the application to communicate with each other without requiring direct dependencies between them."
+  },
+  {
+    question: "What is the name of the Django package that provides support for working with JSON data?",
+    a: "django-json",
+    b: "django-jsonfield",
+    c: "jsonlib",
+    d: "json",
+    correct: "b",
+    explanation: "The django-jsonfield package provides a JSONField model field and form field for working with JSON data in Django applications."
+  },
     {
-        question: " What is the most used programming language in 2020?",
-        a: "Java",
-        b: "C",
-        c: "Python",
-        d: "JavaScript",
-        correct: "c",
-    },
-    {
-        question: " Which of the following is true about typeof operator in JavaScript?",
-        a: "The typeof is a unary operator that is placed before its single operand, which can be of any type",
-        b: "Its value is a string indicating the data type of the operand",
-        c: "Both of the above",
-        d: "None of the above",
-        correct: "c",
-    },
-    {
-        question: "Which of the following is the correct syntax to create a cookie using JavaScript?",
-        a: "document.cookie = 'key1 = value1; key2 = value2; expires = date';",
-        b: "browser.cookie = 'key1 = value1; key2 = value2; expires = date';",
-        c: "window.cookie = 'key1 = value1; key2 = value2; expires = date'; ",
-        d: "navigator.cookie = 'key1 = value1; key2 = value2; expires = date'; ",
-        correct: "a",
-    },
-    {
-        question: "Which built-in method removes the last element from an array and returns that element?",
-        a: "last()",
-        b: "get()",
-        c: "pop()",
-        d: "None of the above",
-        correct: "c",
-    },
-
-    {
-        question: "Which of the following function of Number object formats a number with a specific number of digits to the right of the decimal?",
-        a: "toExponential()",
-        b: "toFixed() ",
-        c: "toPrecision()",
-        d: "toLocaleString()",
-        correct: "b",
-    },
-
-    {
-        question: "Which of the following function of String object returns a number indicating the Unicode value of the character at the given index? ",
-        a: "charAt()",
-        b: "charCodeAt()",
-        c: "concat()",
-        d: "indexOf()",
-        correct: "b",
-    },
-
-    {
-        question: "Which of the following function of String object is used to find a match between a regular expression and a string, and to replace the matched substring with a new substring? ",
-        a: "concat()",
-        b: "match()",
-        c: "replace()",
-        d: "search()",
-        correct: "c",
-    },
-
-    {
-        question: "Which of the following function of String object causes a string to be displayed as struck-out text, as if it were in a <strike> tag? ",
-        a: "sup() ",
-        b: "small() ",
-        c: "strike()",
-        d: "sub() ",
-        correct: "c",
-    },
-
-    {
-        question: "Which of the following function of Array object returns the last (greatest) index of an element within the array equal to the specified value, or -1 if none is found? ",
-        a: "indexOf() ",
-        b: "join() ",
-        c: "lastIndexOf()",
-        d: "map()",
-        correct: "c",
-    },
-    {
-        question: "Why so JavaScript and Java have similar name? ",
-        a: "JavaScript is a stripped-down version of Java ",
-        b: "JavaScript's syntax is loosely based on Java's",
-        c: "They both originated on the island of Java",
-        d: "None of the above ",
-        correct: "b",
-    },
-    {
-        question: "Which of the following function of Array object reverses the order of the elements of an array? ",
-        a: "reverse() ",
-        b: "push()",
-        c: "reduce()",
-        d: "reduceRight()",
-        correct: "a",
-    },
-    {
-        question: "When a user views a page containing a JavaScript program, which machine actually executes the script? ",
-        a: "The User's machine running a Web browser",
-        b: "The Web server",
-        c: "A central machine deep within Netscape's corporate offices ",
-        d: "None of the above",
-        correct: "a",
-    },
-    {
-        question: "  ______ JavaScript is also called client-side JavaScript.",
-        a: "Microsoft",
-        b: "Navigator",
-        c: "LiveWire ",
-        d: "Native",
-        correct: "b",
-    },
-    {
-        question: " What should appear at the very end of your JavaScript?",
-        a: "The </script>",
-        b: "The <script>",
-        c: "The END statement",
-        d: "None of the above",
-        correct: "a",
-    },
-    {
-        question: " Which of the following can't be done with client-side JavaScript?",
-        a: "Validating a form",
-        b: "Sending a form's contents by email",
-        c: "Storing the form's contents to a database file on the server",
-        d: "None of the above",
-        correct: "c",
-    },
-    {
-        question: " How does JavaScript store dates in a date object?",
-        a: "The number of milliseconds since January 1st, 1970",
-        b: "The number of days since January 1st, 1900",
-        c: "The number of seconds since Netscape's public stock offering.",
-        d: "None of the above",
-        correct: "a",
-    },
-    {
-        question: "What does the <noscript> tag do? ",
-        a: "Enclose text to be displayed by non-JavaScript browsers. ",
-        b: "Prevents scripts on the page from executing.",
-        c: "Describes certain low-budget movies.",
-        d: "None of the above",
-        correct: "a",
-    },
-    
-
-    {
-        question: " Which of the following is a JavaScript data type?",
-        a: "null",
-        b: "undefined",
-        c: "object",
-        d: "all of the above",
-        correct: "d",
-    },
-    {
-        question: "What does HTML stand for?",
-        a: "Hypertext Markup Language",
-        b: "Cascading Style Sheet",
-        c: "Jason Object Notation",
-        d: "Helicopters Terminals Motorboats Lamborginis",
-        correct: "a",
-    },
-    {
-        question: "Which of the following is a syntactically correct for loop?",
-        a: "for (i<=10;i++)",
-        b: "for i=1 to 10",
-        c: "for (i=0;i<=10;i++)",
-        d: "for (i=0;i<=10)",
-        correct: "c",
-    },
+    question: "What is the purpose of Django's built-in 'signals' framework?",
+    a: "To allow communication between different parts of the application",
+    b: "To manage database transactions",
+    c: "To handle HTTP requests and responses",
+    d: "To provide a testing environment for the application",
+    correct: "a",
+    explanation: "Django's signals framework provides a way for different parts of the application to communicate with each other without requiring direct dependencies between them."
+  },
+  {
+    question: "Which of the following is a popular third-party package for adding REST API support to Django?",
+    a: "django-rest",
+    b: "django-restful",
+    c: "django-rest-framework",
+    d: "django-api",
+    correct: "c",
+    explanation: "Django REST framework is a popular third-party package for building RESTful APIs in Django applications."
+  },
+  {
+    question: "What is the name of the Django package that provides support for working with images?",
+    a: "django-images",
+    b: "django-imaging",
+    c: "django-imagefield",
+    d: "django-imagekit",
+    correct: "d",
+    explanation: "Django ImageKit is a third-party package that provides a powerful and flexible way to work with images in Django applications."
+  },
+  {
+    question: "Which of the following is a common pattern for structuring a Django project?",
+    a: "MVC (Model-View-Controller)",
+    b: "MVT (Model-View-Template)",
+    c: "MVVM (Model-View-ViewModel)",
+    d: "MVP (Model-View-Presenter)",
+    correct: "b",
+    explanation: "Django's MVT (Model-View-Template) pattern is a variation of the classic MVC pattern that separates the presentation logic (Template) from the business logic (Model) and the user interface (View)."
+  },
+  {
+    question: "What is the name of the Django package that provides support for working with CSV data?",
+    a: "django-csv",
+    b: "django-csvkit",
+    c: "django-csvfield",
+    d: "django-import-export",
+    correct: "d",
+    explanation: "Django-import-export is a third-party package that provides support for importing and exporting CSV, JSON, Excel, and other formats in Django applications."
+  },
+  {
+    question: "What is the purpose of Django's 'context processors'?",
+    a: "To add extra context variables to templates",
+    b: "To manage database transactions",
+    c: "To handle HTTP requests and responses",
+    d: "To provide a testing environment for the application",
+    correct: "a",
+    explanation: "Django's context processors are functions that add extra context variables to the context of a template, allowing developers to pass additional data to the template."
+  },
+  {
+    question: "Which of the following is a commonly used database backend for Django?",
+    a: "MySQL",
+    b: "PostgreSQL",
+    c: "SQLite",
+    d: "All of the above",
+    correct: "d",
+    explanation: "Django supports multiple database backends, including MySQL, PostgreSQL, SQLite, and others."
+  },
+      
 ];
 
 const quiz = document.getElementById("quiz");
